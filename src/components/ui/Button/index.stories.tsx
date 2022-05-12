@@ -1,5 +1,5 @@
 import { Meta, Story } from "@storybook/react";
-import Button, { Props } from "./";
+import Button, { Props } from ".";
 
 export default {
   title: "Components/User Interface/Button",
