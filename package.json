@@ -1,5 +1,5 @@
 {
-  "name": "uc-asa-component-library",
+  "name": "@uc-asa/component-library",
   "version": "1.0.1",
   "repository": "git://github.com/uc-asa/react-component-test.git",
   "author": "Asheesh Sahu <uc-asa@users.noreply.github.com>",
