@@ -1057,6 +1057,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.4.4", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.7":
+  version "7.17.9"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.17.9.tgz#d19fbf802d01a8cb6cf053a64e472d42c434ba72"
+  integrity sha512-lSiBBvodq29uShpWGNbgFdKYNiFDo5/HIYsaCEY9ff4sb10x9jizo2+pRrSyF4jKZCXqgzuqBOQKbUm90gQwJg==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/template@^7.12.7", "@babel/template@^7.15.4", "@babel/template@^7.3.3":
   version "7.15.4"
   resolved "https://spaceapegames.jfrog.io/spaceapegames/api/npm/npmjs-virtual/@babel/template/-/template-7.15.4.tgz#51898d35dcf3faa670c4ee6afcfd517ee139f194"
@@ -1143,7 +1150,7 @@
     "@emotion/utils" "0.11.3"
     babel-plugin-emotion "^10.0.27"
 
-"@emotion/hash@0.8.0":
+"@emotion/hash@0.8.0", "@emotion/hash@^0.8.0":
   version "0.8.0"
   resolved "https://spaceapegames.jfrog.io/spaceapegames/api/npm/npmjs-virtual/@emotion/hash/-/hash-0.8.0.tgz#bbbff68978fefdbe68ccb533bc8cbe1d1afb5413"
   integrity sha1-u7/2iXj+/b5ozLUzvIy+HRr7VBM=
@@ -1343,6 +1350,13 @@
     terminal-link "^2.0.0"
     v8-to-istanbul "^8.0.0"
 
+"@jest/schemas@^28.0.2":
+  version "28.0.2"
+  resolved "https://registry.yarnpkg.com/@jest/schemas/-/schemas-28.0.2.tgz#08c30df6a8d07eafea0aef9fb222c5e26d72e613"
+  integrity sha512-YVDJZjd4izeTDkij00vHHAymNXQ6WWsdChFRK86qck6Jpr3DCL5W3Is3vslviRlP+bLuMYRLbdp98amMvqudhA==
+  dependencies:
+    "@sinclair/typebox" "^0.23.3"
+
 "@jest/source-map@^27.0.6":
   version "27.0.6"
   resolved "https://registry.yarnpkg.com/@jest/source-map/-/source-map-27.0.6.tgz#be9e9b93565d49b0548b86e232092491fb60551f"
@@ -1435,6 +1449,82 @@
     "@types/node" "*"
     "@types/yargs" "^16.0.0"
     chalk "^4.0.0"
+
+"@jest/types@^28.1.0":
+  version "28.1.0"
+  resolved "https://registry.yarnpkg.com/@jest/types/-/types-28.1.0.tgz#508327a89976cbf9bd3e1cc74641a29fd7dfd519"
+  integrity sha512-xmEggMPr317MIOjjDoZ4ejCSr9Lpbt/u34+dvc99t7DS8YirW5rwZEhzKPC2BMUFkUhI48qs6qLUSGw5FuL0GA==
+  dependencies:
+    "@jest/schemas" "^28.0.2"
+    "@types/istanbul-lib-coverage" "^2.0.0"
+    "@types/istanbul-reports" "^3.0.0"
+    "@types/node" "*"
+    "@types/yargs" "^17.0.8"
+    chalk "^4.0.0"
+
+"@material-ui/core@^4.12.3":
+  version "4.12.4"
+  resolved "https://registry.yarnpkg.com/@material-ui/core/-/core-4.12.4.tgz#4ac17488e8fcaf55eb6a7f5efb2a131e10138a73"
+  integrity sha512-tr7xekNlM9LjA6pagJmL8QCgZXaubWUwkJnoYcMKd4gw/t4XiyvnTkjdGrUVicyB2BsdaAv1tvow45bPM4sSwQ==
+  dependencies:
+    "@babel/runtime" "^7.4.4"
+    "@material-ui/styles" "^4.11.5"
+    "@material-ui/system" "^4.12.2"
+    "@material-ui/types" "5.1.0"
+    "@material-ui/utils" "^4.11.3"
+    "@types/react-transition-group" "^4.2.0"
+    clsx "^1.0.4"
+    hoist-non-react-statics "^3.3.2"
+    popper.js "1.16.1-lts"
+    prop-types "^15.7.2"
+    react-is "^16.8.0 || ^17.0.0"
+    react-transition-group "^4.4.0"
+
+"@material-ui/styles@^4.11.5":
+  version "4.11.5"
+  resolved "https://registry.yarnpkg.com/@material-ui/styles/-/styles-4.11.5.tgz#19f84457df3aafd956ac863dbe156b1d88e2bbfb"
+  integrity sha512-o/41ot5JJiUsIETME9wVLAJrmIWL3j0R0Bj2kCOLbSfqEkKf0fmaPt+5vtblUh5eXr2S+J/8J3DaCb10+CzPGA==
+  dependencies:
+    "@babel/runtime" "^7.4.4"
+    "@emotion/hash" "^0.8.0"
+    "@material-ui/types" "5.1.0"
+    "@material-ui/utils" "^4.11.3"
+    clsx "^1.0.4"
+    csstype "^2.5.2"
+    hoist-non-react-statics "^3.3.2"
+    jss "^10.5.1"
+    jss-plugin-camel-case "^10.5.1"
+    jss-plugin-default-unit "^10.5.1"
+    jss-plugin-global "^10.5.1"
+    jss-plugin-nested "^10.5.1"
+    jss-plugin-props-sort "^10.5.1"
+    jss-plugin-rule-value-function "^10.5.1"
+    jss-plugin-vendor-prefixer "^10.5.1"
+    prop-types "^15.7.2"
+
+"@material-ui/system@^4.12.2":
+  version "4.12.2"
+  resolved "https://registry.yarnpkg.com/@material-ui/system/-/system-4.12.2.tgz#f5c389adf3fce4146edd489bf4082d461d86aa8b"
+  integrity sha512-6CSKu2MtmiJgcCGf6nBQpM8fLkuB9F55EKfbdTC80NND5wpTmKzwdhLYLH3zL4cLlK0gVaaltW7/wMuyTnN0Lw==
+  dependencies:
+    "@babel/runtime" "^7.4.4"
+    "@material-ui/utils" "^4.11.3"
+    csstype "^2.5.2"
+    prop-types "^15.7.2"
+
+"@material-ui/types@5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@material-ui/types/-/types-5.1.0.tgz#efa1c7a0b0eaa4c7c87ac0390445f0f88b0d88f2"
+  integrity sha512-7cqRjrY50b8QzRSYyhSpx4WRw2YuO0KKIGQEVk5J8uoz2BanawykgZGoWEqKm7pVIbzFDN0SpPcVV4IhOFkl8A==
+
+"@material-ui/utils@^4.11.3":
+  version "4.11.3"
+  resolved "https://registry.yarnpkg.com/@material-ui/utils/-/utils-4.11.3.tgz#232bd86c4ea81dab714f21edad70b7fdf0253942"
+  integrity sha512-ZuQPV4rBK/V1j2dIkSSEcH5uT6AaHuKWFfotADHsC0wVL1NLd2WkFCm4ZZbX33iO4ydl6V0GPngKm8HZQ2oujg==
+  dependencies:
+    "@babel/runtime" "^7.4.4"
+    prop-types "^15.7.2"
+    react-is "^16.8.0 || ^17.0.0"
 
 "@mdx-js/loader@^1.6.22":
   version "1.6.22"
@@ -1598,6 +1688,11 @@
     "@types/estree" "0.0.39"
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
+
+"@sinclair/typebox@^0.23.3":
+  version "0.23.5"
+  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.23.5.tgz#93f7b9f4e3285a7a9ade7557d9a8d36809cbc47d"
+  integrity sha512-AFBVi/iT4g20DHoujvMH1aEDn8fGJh4xsRGCP6d8RpLPMqsNPvW01Jcn0QysXTsg++/xj25NmJsGyH9xug/wKg==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
@@ -2591,6 +2686,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-transition-group@^4.2.0":
+  version "4.4.4"
+  resolved "https://registry.yarnpkg.com/@types/react-transition-group/-/react-transition-group-4.4.4.tgz#acd4cceaa2be6b757db61ed7b432e103242d163e"
+  integrity sha512-7gAPz7anVK5xzbeQW9wFBDg7G++aPLAFY0QaSMOou9rJZpbuI58WAuJrgu+qR92l61grlnCUe7AFX8KGahAgug==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react@*", "@types/react@^17.0.24":
   version "17.0.24"
   resolved "https://spaceapegames.jfrog.io/spaceapegames/api/npm/npmjs-virtual/@types/react/-/react-17.0.24.tgz#7e1b3f78d0fc53782543f9bce6d949959a5880bd"
@@ -2681,6 +2783,13 @@
   version "16.0.4"
   resolved "https://registry.yarnpkg.com/@types/yargs/-/yargs-16.0.4.tgz#26aad98dd2c2a38e421086ea9ad42b9e51642977"
   integrity sha512-T8Yc9wt/5LbJyCaLiHPReJa0kApcIgJ7Bn735GjItUfh08Z1pJvu8QZqb9s+mMvKV6WUQRV7K2R46YbjMXTTJw==
+  dependencies:
+    "@types/yargs-parser" "*"
+
+"@types/yargs@^17.0.8":
+  version "17.0.10"
+  resolved "https://registry.yarnpkg.com/@types/yargs/-/yargs-17.0.10.tgz#591522fce85d8739bca7b8bb90d048e4478d186a"
+  integrity sha512-gmEaFwpj/7f/ROdtIlci1R1VYU1J4j95m8T+Tj3iBgiBFKg1foE/PSl93bBd5T9LDXNPo8UlNN6W0qwD8O5OaA==
   dependencies:
     "@types/yargs-parser" "*"
 
@@ -3948,6 +4057,11 @@ ci-info@^3.1.1:
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-3.2.0.tgz#2876cb948a498797b5236f0095bc057d0dca38b6"
   integrity sha512-dVqRX7fLUm8J6FgHJ418XuIgDLZDkYcDFTeL6TA2gt5WlIZUQrrH6EZrNClwT/H0FateUsZkGIOPRrLbP+PR9A==
 
+ci-info@^3.2.0:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-3.3.1.tgz#58331f6f472a25fe3a50a351ae3052936c2c7f32"
+  integrity sha512-SXgeMX9VwDe7iFFaEWkA5AstuER9YKqy4EhHqr4DVqkwmD9rpVimkMKWHdjn30Ja45txyjhSn63lVX69eVCckg==
+
 cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
   version "1.0.4"
   resolved "https://spaceapegames.jfrog.io/spaceapegames/api/npm/npmjs-virtual/cipher-base/-/cipher-base-1.0.4.tgz#8760e4ecc272f4c363532f926d874aae2c1397de"
@@ -4016,7 +4130,7 @@ clone-deep@^4.0.1:
     kind-of "^6.0.2"
     shallow-clone "^3.0.0"
 
-clsx@^1.1.1:
+clsx@^1.0.4, clsx@^1.1.1:
   version "1.1.1"
   resolved "https://spaceapegames.jfrog.io/spaceapegames/api/npm/npmjs-virtual/clsx/-/clsx-1.1.1.tgz#98b3134f9abbdf23b2663491ace13c5c03a73188"
   integrity sha1-mLMTT5q73yOyZjSRrOE8XAOnMYg=
@@ -4418,6 +4532,14 @@ css-to-react-native@^3.0.0:
     css-color-keywords "^1.0.0"
     postcss-value-parser "^4.0.2"
 
+css-vendor@^2.0.8:
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/css-vendor/-/css-vendor-2.0.8.tgz#e47f91d3bd3117d49180a3c935e62e3d9f7f449d"
+  integrity sha512-x9Aq0XTInxrkuFeHKbYC7zWY8ai7qJ04Kxd9MnvbC1uO5DagxoHQjm4JvG+vCdXOoFtCjbL2XSZfxmoYa9uQVQ==
+  dependencies:
+    "@babel/runtime" "^7.8.3"
+    is-in-browser "^1.0.2"
+
 css-what@^5.0.0:
   version "5.0.1"
   resolved "https://spaceapegames.jfrog.io/spaceapegames/api/npm/npmjs-virtual/css-what/-/css-what-5.0.1.tgz#3efa820131f4669a8ac2408f9c32e7c7de9f4cad"
@@ -4444,6 +4566,11 @@ cssstyle@^2.3.0:
   integrity sha512-AZL67abkUzIuvcHqk7c09cezpGNcxUxU4Ioi/05xHk4DQeTkWmGYftIE6ctU6AEt+Gn4n1lDStOtj7FKycP71A==
   dependencies:
     cssom "~0.3.6"
+
+csstype@^2.5.2:
+  version "2.6.20"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.20.tgz#9229c65ea0b260cf4d3d997cb06288e36a8d6dda"
+  integrity sha512-/WwNkdXfckNgw6S5R125rrW8ez139lBHWouiBvX8dfMFtcn6V81REDqnH7+CRpRipfYlyU1CmOnOxrmGcFOjeA==
 
 csstype@^2.5.7:
   version "2.6.18"
@@ -4646,6 +4773,14 @@ dom-converter@^0.2.0:
   integrity sha1-ZyGp2u4uKTaClVtq/kFncWJ7t2g=
   dependencies:
     utila "~0.4"
+
+dom-helpers@^5.0.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/dom-helpers/-/dom-helpers-5.2.1.tgz#d9400536b2bf8225ad98fe052e029451ac40e902"
+  integrity sha512-nRCa7CK3VTrM2NmGkIy4cbK7IZlgBE/PYMn55rrXefr5xXDP0LdtfPnblFDoVdcAfslJ7or6iqAUnx0CCGIWQA==
+  dependencies:
+    "@babel/runtime" "^7.8.7"
+    csstype "^3.0.2"
 
 dom-serializer@^1.0.1:
   version "1.3.2"
@@ -5735,6 +5870,11 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6
   resolved "https://spaceapegames.jfrog.io/spaceapegames/api/npm/npmjs-virtual/graceful-fs/-/graceful-fs-4.2.8.tgz#e412b8d33f5e006593cbd3cee6df9f2cebbe802a"
   integrity sha1-5BK40z9eAGWTy9PO5t+fLOu+gCo=
 
+graceful-fs@^4.2.9:
+  version "4.2.10"
+  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.10.tgz#147d3a006da4ca3ce14728c7aefc287c367d7a6c"
+  integrity sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==
+
 gud@^1.0.0:
   version "1.0.0"
   resolved "https://spaceapegames.jfrog.io/spaceapegames/api/npm/npmjs-virtual/gud/-/gud-1.0.0.tgz#a489581b17e6a70beca9abe3ae57de7a499852c0"
@@ -5929,7 +6069,7 @@ hmac-drbg@^1.0.1:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.1"
 
-hoist-non-react-statics@^3.0.0, hoist-non-react-statics@^3.3.0:
+hoist-non-react-statics@^3.0.0, hoist-non-react-statics@^3.3.0, hoist-non-react-statics@^3.3.2:
   version "3.3.2"
   resolved "https://spaceapegames.jfrog.io/spaceapegames/api/npm/npmjs-virtual/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
   integrity sha1-7OCsr3HWLClpwuxZ/v9CpLGoW0U=
@@ -6059,6 +6199,11 @@ human-signals@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-2.1.0.tgz#dc91fcba42e4d06e4abaed33b3e7a3c02f514ea0"
   integrity sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==
+
+hyphenate-style-name@^1.0.3:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/hyphenate-style-name/-/hyphenate-style-name-1.0.4.tgz#691879af8e220aea5750e8827db4ef62a54e361d"
+  integrity sha512-ygGZLjmXfPHj+ZWh6LwbC37l43MhfztxetbFCoYTM2VjkIUpeHgSNn7QIyVFj7YQ1Wl9Cbw5sholVJPzWvC2MQ==
 
 iconv-lite@0.4.24:
   version "0.4.24"
@@ -6435,6 +6580,11 @@ is-hexadecimal@^1.0.0:
   version "1.0.4"
   resolved "https://spaceapegames.jfrog.io/spaceapegames/api/npm/npmjs-virtual/is-hexadecimal/-/is-hexadecimal-1.0.4.tgz#cc35c97588da4bd49a8eedd6bc4082d44dcb23a7"
   integrity sha1-zDXJdYjaS9Saju3WvECC1E3LI6c=
+
+is-in-browser@^1.0.2, is-in-browser@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/is-in-browser/-/is-in-browser-1.1.3.tgz#56ff4db683a078c6082eb95dad7dc62e1d04f835"
+  integrity sha1-Vv9NtoOgeMYILrldrX3GLh0E+DU=
 
 is-map@^2.0.2:
   version "2.0.2"
@@ -7071,7 +7221,7 @@ jest-util@^26.6.2:
     is-ci "^2.0.0"
     micromatch "^4.0.2"
 
-jest-util@^27.0.0, jest-util@^27.2.0:
+jest-util@^27.2.0:
   version "27.2.0"
   resolved "https://registry.yarnpkg.com/jest-util/-/jest-util-27.2.0.tgz#bfccb85cfafae752257319e825a5b8d4ada470dc"
   integrity sha512-T5ZJCNeFpqcLBpx+Hl9r9KoxBCUqeWlJ1Htli+vryigZVJ1vuLB9j35grEBASp4R13KFkV7jM52bBGnArpJN6A==
@@ -7081,6 +7231,18 @@ jest-util@^27.0.0, jest-util@^27.2.0:
     chalk "^4.0.0"
     graceful-fs "^4.2.4"
     is-ci "^3.0.0"
+    picomatch "^2.2.3"
+
+jest-util@^28.0.0:
+  version "28.1.0"
+  resolved "https://registry.yarnpkg.com/jest-util/-/jest-util-28.1.0.tgz#d54eb83ad77e1dd441408738c5a5043642823be5"
+  integrity sha512-qYdCKD77k4Hwkose2YBEqQk7PzUf/NSE+rutzceduFveQREeH6b+89Dc9+wjX9dAwHcgdx4yedGA3FQlU/qCTA==
+  dependencies:
+    "@jest/types" "^28.1.0"
+    "@types/node" "*"
+    chalk "^4.0.0"
+    ci-info "^3.2.0"
+    graceful-fs "^4.2.9"
     picomatch "^2.2.3"
 
 jest-validate@^27.2.2:
@@ -7241,6 +7403,76 @@ jsonfile@^6.0.1:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
+jss-plugin-camel-case@^10.5.1:
+  version "10.9.0"
+  resolved "https://registry.yarnpkg.com/jss-plugin-camel-case/-/jss-plugin-camel-case-10.9.0.tgz#4921b568b38d893f39736ee8c4c5f1c64670aaf7"
+  integrity sha512-UH6uPpnDk413/r/2Olmw4+y54yEF2lRIV8XIZyuYpgPYTITLlPOsq6XB9qeqv+75SQSg3KLocq5jUBXW8qWWww==
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    hyphenate-style-name "^1.0.3"
+    jss "10.9.0"
+
+jss-plugin-default-unit@^10.5.1:
+  version "10.9.0"
+  resolved "https://registry.yarnpkg.com/jss-plugin-default-unit/-/jss-plugin-default-unit-10.9.0.tgz#bb23a48f075bc0ce852b4b4d3f7582bc002df991"
+  integrity sha512-7Ju4Q9wJ/MZPsxfu4T84mzdn7pLHWeqoGd/D8O3eDNNJ93Xc8PxnLmV8s8ZPNRYkLdxZqKtm1nPQ0BM4JRlq2w==
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    jss "10.9.0"
+
+jss-plugin-global@^10.5.1:
+  version "10.9.0"
+  resolved "https://registry.yarnpkg.com/jss-plugin-global/-/jss-plugin-global-10.9.0.tgz#fc07a0086ac97aca174e37edb480b69277f3931f"
+  integrity sha512-4G8PHNJ0x6nwAFsEzcuVDiBlyMsj2y3VjmFAx/uHk/R/gzJV+yRHICjT4MKGGu1cJq2hfowFWCyrr/Gg37FbgQ==
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    jss "10.9.0"
+
+jss-plugin-nested@^10.5.1:
+  version "10.9.0"
+  resolved "https://registry.yarnpkg.com/jss-plugin-nested/-/jss-plugin-nested-10.9.0.tgz#cc1c7d63ad542c3ccc6e2c66c8328c6b6b00f4b3"
+  integrity sha512-2UJnDrfCZpMYcpPYR16oZB7VAC6b/1QLsRiAutOt7wJaaqwCBvNsosLEu/fUyKNQNGdvg2PPJFDO5AX7dwxtoA==
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    jss "10.9.0"
+    tiny-warning "^1.0.2"
+
+jss-plugin-props-sort@^10.5.1:
+  version "10.9.0"
+  resolved "https://registry.yarnpkg.com/jss-plugin-props-sort/-/jss-plugin-props-sort-10.9.0.tgz#30e9567ef9479043feb6e5e59db09b4de687c47d"
+  integrity sha512-7A76HI8bzwqrsMOJTWKx/uD5v+U8piLnp5bvru7g/3ZEQOu1+PjHvv7bFdNO3DwNPC9oM0a//KwIJsIcDCjDzw==
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    jss "10.9.0"
+
+jss-plugin-rule-value-function@^10.5.1:
+  version "10.9.0"
+  resolved "https://registry.yarnpkg.com/jss-plugin-rule-value-function/-/jss-plugin-rule-value-function-10.9.0.tgz#379fd2732c0746fe45168011fe25544c1a295d67"
+  integrity sha512-IHJv6YrEf8pRzkY207cPmdbBstBaE+z8pazhPShfz0tZSDtRdQua5jjg6NMz3IbTasVx9FdnmptxPqSWL5tyJg==
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    jss "10.9.0"
+    tiny-warning "^1.0.2"
+
+jss-plugin-vendor-prefixer@^10.5.1:
+  version "10.9.0"
+  resolved "https://registry.yarnpkg.com/jss-plugin-vendor-prefixer/-/jss-plugin-vendor-prefixer-10.9.0.tgz#aa9df98abfb3f75f7ed59a3ec50a5452461a206a"
+  integrity sha512-MbvsaXP7iiVdYVSEoi+blrW+AYnTDvHTW6I6zqi7JcwXdc6I9Kbm234nEblayhF38EftoenbM+5218pidmC5gA==
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    css-vendor "^2.0.8"
+    jss "10.9.0"
+
+jss@10.9.0, jss@^10.5.1:
+  version "10.9.0"
+  resolved "https://registry.yarnpkg.com/jss/-/jss-10.9.0.tgz#7583ee2cdc904a83c872ba695d1baab4b59c141b"
+  integrity sha512-YpzpreB6kUunQBbrlArlsMpXYyndt9JATbt95tajx0t4MTJJcCJdd4hdNpHmOIDiUJrF/oX5wtVFrS3uofWfGw==
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    csstype "^3.0.2"
+    is-in-browser "^1.1.3"
+    tiny-warning "^1.0.2"
+
 junk@^3.1.0:
   version "3.1.0"
   resolved "https://spaceapegames.jfrog.io/spaceapegames/api/npm/npmjs-virtual/junk/-/junk-3.1.0.tgz#31499098d902b7e98c5d9b9c80f43457a88abfa1"
@@ -7366,12 +7598,17 @@ lodash.debounce@^4.0.8:
   resolved "https://spaceapegames.jfrog.io/spaceapegames/api/npm/npmjs-virtual/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
   integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
 
+lodash.memoize@4.x:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
+  integrity sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=
+
 lodash.uniq@4.5.0:
   version "4.5.0"
   resolved "https://spaceapegames.jfrog.io/spaceapegames/api/npm/npmjs-virtual/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-lodash@4.x, lodash@^4.17.11, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21, lodash@^4.7.0:
+lodash@^4.17.11, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21, lodash@^4.7.0:
   version "4.17.21"
   resolved "https://spaceapegames.jfrog.io/spaceapegames/api/npm/npmjs-virtual/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha1-Z5WRxWTDv/quhFTPCz3zcMPWkRw=
@@ -8451,6 +8688,11 @@ polished@^4.0.5:
   dependencies:
     "@babel/runtime" "^7.14.0"
 
+popper.js@1.16.1-lts:
+  version "1.16.1-lts"
+  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.16.1-lts.tgz#cf6847b807da3799d80ee3d6d2f90df8a3f50b05"
+  integrity sha512-Kjw8nKRl1m+VrSFCoVGPph93W/qrSO7ZkqPpTf7F4bk/sqcfWK019dWBUpE/fBOsOQY1dks/Bmcbfn1heM/IsA==
+
 posix-character-classes@^0.1.0:
   version "0.1.1"
   resolved "https://spaceapegames.jfrog.io/spaceapegames/api/npm/npmjs-virtual/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
@@ -8901,7 +9143,7 @@ react-is@^16.7.0, react-is@^16.8.1:
   resolved "https://spaceapegames.jfrog.io/spaceapegames/api/npm/npmjs-virtual/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha1-eJcppNw23imZ3BVt1sHZwYzqVqQ=
 
-react-is@^17.0.1, react-is@^17.0.2:
+"react-is@^16.8.0 || ^17.0.0", react-is@^17.0.1, react-is@^17.0.2:
   version "17.0.2"
   resolved "https://spaceapegames.jfrog.io/spaceapegames/api/npm/npmjs-virtual/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha1-5pHUqOnHiTZWVVOas3J2Kw77VPA=
@@ -8962,6 +9204,16 @@ react-textarea-autosize@^8.3.0:
     "@babel/runtime" "^7.10.2"
     use-composed-ref "^1.0.0"
     use-latest "^1.0.0"
+
+react-transition-group@^4.4.0:
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-4.4.2.tgz#8b59a56f09ced7b55cbd53c36768b922890d5470"
+  integrity sha512-/RNYfRAMlZwDSr6z4zNKV6xu53/e2BuaBbGhbyYIXTrmgu/bGHzmqOs7mJSJBHy9Ud+ApHx3QjrkKSp1pxvlFg==
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+    dom-helpers "^5.0.1"
+    loose-envify "^1.4.0"
+    prop-types "^15.6.2"
 
 react@^17.0.2:
   version "17.0.2"
@@ -10164,6 +10416,11 @@ timers-browserify@^2.0.4:
   dependencies:
     setimmediate "^1.0.4"
 
+tiny-warning@^1.0.2:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/tiny-warning/-/tiny-warning-1.0.3.tgz#94a30db453df4c643d0fd566060d60a875d84754"
+  integrity sha512-lBN9zLN/oAf68o3zNXYrdCt1kP8WsiGW8Oo2ka41b2IM5JL/S1CTyX1rW0mb/zSuJun0ZUrDxx4sqvYS2FWzPA==
+
 tmpl@1.0.x:
   version "1.0.5"
   resolved "https://spaceapegames.jfrog.io/spaceapegames/api/npm/npmjs-virtual/tmpl/-/tmpl-1.0.5.tgz#8683e0b902bb9c20c4f726e3c0b69f36518c07cc"
@@ -10267,19 +10524,19 @@ ts-essentials@^2.0.3:
   resolved "https://spaceapegames.jfrog.io/spaceapegames/api/npm/npmjs-virtual/ts-essentials/-/ts-essentials-2.0.12.tgz#c9303f3d74f75fa7528c3d49b80e089ab09d8745"
   integrity sha1-yTA/PXT3X6dSjD1JuA4ImrCdh0U=
 
-ts-jest@^27.0.5:
-  version "27.0.5"
-  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-27.0.5.tgz#0b0604e2271167ec43c12a69770f0bb65ad1b750"
-  integrity sha512-lIJApzfTaSSbtlksfFNHkWOzLJuuSm4faFAfo5kvzOiRAuoN4/eKxVJ2zEAho8aecE04qX6K1pAzfH5QHL1/8w==
+ts-jest@^28.0.2:
+  version "28.0.2"
+  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-28.0.2.tgz#e4026357006731f96a033b94db89d01e0d3c0591"
+  integrity sha512-IOZMb3D0gx6IHO9ywPgiQxJ3Zl4ECylEFwoVpENB55aTn5sdO0Ptyx/7noNBxAaUff708RqQL4XBNxxOVjY0vQ==
   dependencies:
     bs-logger "0.x"
     fast-json-stable-stringify "2.x"
-    jest-util "^27.0.0"
+    jest-util "^28.0.0"
     json5 "2.x"
-    lodash "4.x"
+    lodash.memoize "4.x"
     make-error "1.x"
     semver "7.x"
-    yargs-parser "20.x"
+    yargs-parser "^20.x"
 
 ts-pnp@^1.1.6:
   version "1.2.0"
@@ -10971,7 +11228,7 @@ yaml@^1.10.0, yaml@^1.7.2:
   resolved "https://spaceapegames.jfrog.io/spaceapegames/api/npm/npmjs-virtual/yaml/-/yaml-1.10.2.tgz#2301c5ffbf12b467de8da2333a459e29e7920e4b"
   integrity sha1-IwHF/78StGfejaIzOkWeKeeSDks=
 
-yargs-parser@20.x, yargs-parser@^20.2.2, yargs-parser@^20.2.7:
+yargs-parser@^20.2.2, yargs-parser@^20.2.7, yargs-parser@^20.x:
   version "20.2.9"
   resolved "https://spaceapegames.jfrog.io/spaceapegames/api/npm/npmjs-virtual/yargs-parser/-/yargs-parser-20.2.9.tgz#2eb7dc3b0289718fc295f362753845c41a0c94ee"
   integrity sha1-LrfcOwKJcY/ClfNidThFxBoMlO4=
