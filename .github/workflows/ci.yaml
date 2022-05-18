@@ -1,0 +1,32 @@
+name: CI
+on:
+  pull_request:
+    branches:
+      - main
+      - dev
+jobs:
+  CI:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: "0"
+
+      - name: Node Setup
+        uses: actions/setup-node@v2
+        with:
+          always-auth: true
+          node-version: "14.x"
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@uc-asa"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: |
+          npm install
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GIT_TOKEN }}
+
+      - name: Test
+        run: npm test

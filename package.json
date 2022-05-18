@@ -19,7 +19,7 @@
     "release": "yarn build && yarn version",
     "preversion": "yarn test && yarn build",
     "postversion": "git push --tags && yarn publish . --tag $npm_package_version && git push && echo \"Successfully released version $npm_package_version!\"",
-    "start": "react-scripts start"
+    "start": "PORT=3007 react-scripts start"
   },
   "peerDependencies": {
     "react": "^18.1.0",
