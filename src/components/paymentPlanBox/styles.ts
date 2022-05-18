@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     width: "250px",
     height: "130px",
     padding: "12px 20px 28px",
-    margin: "8px 0px",
+    margin: "10px",
     backgroundColor: (props: IStyleProps) => {
       return props.selected === true ? "#0069AA" : "#FFFFFF";
     },

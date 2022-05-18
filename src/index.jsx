@@ -1,18 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import theme from "./theme";
+import { ThemeProvider } from "@material-ui/core/styles";
 // import reportWebVitals from "./reportWebVitals";
-
+import WithTheme from "./containers/oneTimePayment/withTheme";
+import SetupPaymentPlan from "./containers/setupPaymentPlan";
 
 ReactDOM.render(
   <React.StrictMode>
-     <div>
-        <div>asasas</div>
-        <div>asasas</div>
-        <div>asasas</div>
-        <div>asasas</div>
-        <div>asasas</div>
-     </div>
+    {/* <ThemeProvider theme={theme}> */}
+      <div>
+        <WithTheme />
+      </div>
+    {/* </ThemeProvider> */}
   </React.StrictMode>,
 
   document.getElementById("root")

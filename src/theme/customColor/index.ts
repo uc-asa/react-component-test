@@ -5,6 +5,7 @@ export const mcmColorTheme = {
   mantisGreen: "#7AC143",
   frosteeGreen: "#D5E4CA",
   regalBlue: "#133B62",
+  silver: '#BDBDBD',
 };
 
 export default mcmColorTheme;

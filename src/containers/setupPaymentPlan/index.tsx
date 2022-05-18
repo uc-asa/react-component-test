@@ -1,23 +1,20 @@
 import { Box, Typography } from "@material-ui/core";
 import Button from "../../components/Button";
 import LinearProgressBar from "../../components/linearProgressBar";
-import PaymentBox from "../../components/paymentBox";
+import PaymentPlanBox from "../../components/paymentPlanBox";
 import ArrowLongLeftIcon from "../../Icons/ArrowLongLeft";
 import ArrowLongRightIcon from "../../Icons/ArrowLongRight";
-import theme from "../../theme";
-import { ThemeProvider } from "@material-ui/core/styles";
 import PaymentSidebar from "../paymentSidebar";
 import useStyles from "./styles";
 
-const OneTimePayment = () => {
+const SetupPaymentPlan = () => {
   const css = useStyles();
 
   return (
-    <ThemeProvider theme={theme}>
     <Box display="flex" flexDirection="row">
       <Box className={css.oneTimePaymentMainContainer}>
         <Typography className={css.oneTimePaymentHeadingTextStyle}>
-          Make a One Time Payment
+          Set up a payment plan
         </Typography>
         <Box className={css.oneTimePaymentBoxStyle}>
           <Box className={css.oneTimePaymentInsideBoxStyle}>
@@ -25,14 +22,57 @@ const OneTimePayment = () => {
               <LinearProgressBar />
             </Box>
             <Typography className={css.oneTimePaymentDescriptionTextStyle}>
-              You can pay the entire amount. Paying less than the balance will
-              not resolve your account.
+              Which plan works best for you?
             </Typography>
-            <Box className={css.oneTimePaymentBoxItemStyle}>
-              <PaymentBox />
-              <PaymentBox />
-              <PaymentBox />
+            <Box>
+              <Typography>Plan Start Date</Typography>
             </Box>
+            <Box className={css.setupPaymentPlanDownPaymentTextBoxStyle}>
+              <Typography
+                className={css.setupPaymentPlanDownPaymentTypeTextStyle}
+              >
+                Monthly Payment Plans
+              </Typography>
+              <Typography
+                className={css.setupPaymentPlanDownPaymentAmountTextStyle}
+              >
+                $20 Down Payment
+              </Typography>
+            </Box>
+            <Box className={css.oneTimePaymentBoxItemStyle}>
+              <PaymentPlanBox />
+              <PaymentPlanBox />
+              <PaymentPlanBox />
+            </Box>
+
+            <Box mt={10} className={css.setupPaymentPlanDownPaymentTextBoxStyle}>
+              <Typography
+                className={css.setupPaymentPlanDownPaymentTypeTextStyle}
+              >
+                Bi-weekly Payment Plans
+              </Typography>
+              <Typography
+                className={css.setupPaymentPlanDownPaymentAmountTextStyle}
+              >
+                $10 Down Payment
+              </Typography>
+            </Box>
+            <Box className={css.oneTimePaymentBoxItemStyle}>
+              <PaymentPlanBox />
+              <PaymentPlanBox />
+              <PaymentPlanBox />
+            </Box>
+            <Typography
+                className={css.setupPaymentPlanOrTextStyle}
+              >
+                or
+              </Typography>
+
+              <Typography
+                className={css.setupPaymentPlanCreateOwnPlanTextStyle}
+              >
+                Not interested in the above plans? Create your own plan
+              </Typography>
           </Box>
           <Box className={css.oneTimePaymentBoxNavigationContainer}>
             <Button
@@ -70,8 +110,7 @@ const OneTimePayment = () => {
       </Box>
       <PaymentSidebar />
     </Box>
-    </ThemeProvider>
   );
 };
 
-export default OneTimePayment;
+export default SetupPaymentPlan;

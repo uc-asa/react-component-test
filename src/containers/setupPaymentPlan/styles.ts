@@ -22,18 +22,47 @@ const useStyles = makeStyles((theme: Theme) =>
       boxShadow: "0px 0px 20px 3px rgba(0, 0, 0, 0.03)",
       borderRadius: "6px",
     },
-    oneTimePaymentInsideBoxStyle:{
+    oneTimePaymentInsideBoxStyle: {
       display: "flex",
       flexDirection: "column",
       justifyContent: "center",
       alignItems: "center",
-      padding: '22px 32px 68px'
+      padding: "22px 32px 68px",
     },
     oneTimePaymentDescriptionTextStyle: {
       // fontWeight: "700 !important",
       fontSize: "16px !important",
-      // color: theme.mcmColorTheme.black,
+      color: theme.mcmColorTheme.black,
       marginBottom: "86px !important",
+    },
+    setupPaymentPlanDownPaymentTextBoxStyle: {
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "space-between",
+      alignItems: "center",
+      width: "100%",
+    },
+    setupPaymentPlanDownPaymentTypeTextStyle: {
+      // fontWeight: "700 !important",
+      fontSize: "18px !important",
+      color: theme.mcmColorTheme.accentBlue,
+    },
+    setupPaymentPlanDownPaymentAmountTextStyle: {
+      // fontWeight: "400 !important",
+      fontSize: "14px !important",
+      color: theme.mcmColorTheme.black,
+    },
+    setupPaymentPlanOrTextStyle: {
+      // fontWeight: "700 !important",
+      fontSize: "18px !important",
+      color: theme.mcmColorTheme.silver,
+      margin: '30px auto'
+    },
+    setupPaymentPlanCreateOwnPlanTextStyle: {
+      // fontWeight: "500 !important",
+      fontSize: "14px !important",
+      color: theme.mcmColorTheme.accentBlue,
+      textDecoration: "underline",
     },
     oneTimePaymentBoxItemStyle: {
       display: "flex",
@@ -45,19 +74,19 @@ const useStyles = makeStyles((theme: Theme) =>
       justifyContent: "space-between",
       alignItems: "center",
       padding: "18px 30px",
-      // backgroundColor: theme.mcmColorTheme.regalBlue,
-      width: '94%'
+      backgroundColor: theme.mcmColorTheme.regalBlue,
+      width: "94%",
     },
-    oneTimePaymentBoxBackButtonStyle:{
+    oneTimePaymentBoxBackButtonStyle: {
       color: `${theme.mcmColorTheme.white} !important`,
-      borderRadius: '6px',
+      borderRadius: "6px",
     },
-    oneTimePaymentBoxNextButtonStyle:{
+    oneTimePaymentBoxNextButtonStyle: {
       backgroundColor: `${theme.mcmColorTheme.mantisGreen} !important`,
       color: `${theme.mcmColorTheme.white} !important`,
-      borderRadius: '6px',
-      padding: '16px 42px !important'
-    }
+      borderRadius: "6px",
+      padding: "16px 42px !important",
+    },
   })
 );
 
