@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme: Theme) =>
     oneTimePaymentDescriptionTextStyle: {
       // fontWeight: "700 !important",
       fontSize: "16px !important",
-      // color: theme.mcmColorTheme.black,
+      color: theme.mcmColorTheme.black,
       marginBottom: "86px !important",
     },
     oneTimePaymentBoxItemStyle: {
@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme: Theme) =>
       justifyContent: "space-between",
       alignItems: "center",
       padding: "18px 30px",
-      // backgroundColor: theme.mcmColorTheme.regalBlue,
+      backgroundColor: theme.mcmColorTheme.regalBlue,
       width: '94%'
     },
     oneTimePaymentBoxBackButtonStyle:{
