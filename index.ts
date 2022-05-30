@@ -3,4 +3,4 @@ export { default as TestLink } from "./src//components/ui/TestLink";
 
 // Containers
 
-export { default as OneTimePayment } from "./src/containers/oneTimePayment";
+export { default as OneTimePaymentWithTheme } from "./src/containers/oneTimePayment/withTheme";
