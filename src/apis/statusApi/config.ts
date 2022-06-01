@@ -1,6 +1,5 @@
 export const mcmStatusApi = {
-  // getWorkableStatus: "/test_stage/test-methods/get-workable-status",
-  getWorkableStatus: "/api/v1/loan-query-request/",
+  getWorkableStatus: "/dev/test-methods/get-workable-status",
 };
 
 export default mcmStatusApi;

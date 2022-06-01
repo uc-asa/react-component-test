@@ -1,5 +1,5 @@
 import axios from "axios";
-import Cookies from 'js-cookie';
+import Cookies from "js-cookie";
 // import { getAccessToken, logout } from "../utils/auth";
 // import { errorToast } from "../utils/toast";
 // import { API_STATUS } from "../constants/common";
@@ -16,25 +16,14 @@ import Cookies from 'js-cookie';
 
 const defaultTimeout = 40000;
 
-const handleRequest = (config: any) => {
-const value = Cookies.get('consumerId') // => 'value'
-console.log({
-  ...config,
-  headers: {
-    consumerId: value,
-
-    ...config.headers,
-  },
-}, 'value')
-  return {
-    ...config,
-    headers: {
-      // consumerId: value,
-
-      ...config.headers,
-    },
-  };
-};
+// const handleRequest = (config: any) => {
+//   return {
+//     ...config,
+//     headers: {
+//       ...config.headers,
+//     },
+//   };
+// };
 
 /**
  *
@@ -77,7 +66,7 @@ const createApiInstance = (baseURL: string, name = "") => {
     );
   }
 
-  api.interceptors.request.use(handleRequest);
+  // api.interceptors.request.use(handleRequest);
 
   api.interceptors.response.use(
     (response) => {

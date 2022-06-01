@@ -15,7 +15,8 @@ const OneTimePayment = () => {
   const css = useStyles();
 
   const getWorkableStatus = async () => {
-    const { data } = await statusApi.getWorkableStatus();
+    const payload = { content: { consumerId: 12345678 } };
+    const { data } = await statusApi.getWorkableStatus(payload);
     console.log(data, "data");
   };
 
