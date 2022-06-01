@@ -24,10 +24,11 @@ const PaymentBox = ({ title, payment, onClick, ...props }: PaymentBoxProps) => {
         className={css.paymentBoxCheckBoxStyle}
         value={selected}
         onClick={() => {
-          console.log('hit')
+          console.log("hit");
           setSelected(!selected);
         }}
       />
+
       <Box className={css.paymentBoxAmountContainer}>
         <Typography className={css.paymentBoxAmountTextStyle}>$6000</Typography>
         <Box className={css.paymentBoxAmountInputContainer}>

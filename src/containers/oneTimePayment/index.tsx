@@ -5,8 +5,6 @@ import LinearProgressBar from "../../components/linearProgressBar";
 import PaymentBox from "../../components/paymentBox";
 import ArrowLongLeftIcon from "../../Icons/ArrowLongLeft";
 import ArrowLongRightIcon from "../../Icons/ArrowLongRight";
-import theme from "../../theme";
-import { ThemeProvider } from "@material-ui/core/styles";
 import PaymentSidebar from "../paymentSidebar";
 import statusApi from "../../apis/statusApi";
 import useStyles from "./styles";
@@ -25,7 +23,7 @@ const OneTimePayment = () => {
   }, []);
 
   return (
-    <ThemeProvider theme={theme}>
+    <Box>
       <Box display="flex" flexDirection="row">
         <Box className={css.oneTimePaymentMainContainer}>
           <Typography className={css.oneTimePaymentHeadingTextStyle}>
@@ -82,7 +80,8 @@ const OneTimePayment = () => {
         </Box>
         <PaymentSidebar />
       </Box>
-    </ThemeProvider>
+      <PaymentSidebar />
+    </Box>
   );
 };
 
