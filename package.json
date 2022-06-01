@@ -1,6 +1,6 @@
 {
   "name": "@uc-asa/component-library",
-  "version": "1.0.2",
+  "version": "1.0.8",
   "repository": "git://github.com/uc-asa/react-component-test.git",
   "author": "Asheesh Sahu <uc-asa@users.noreply.github.com>",
   "license": "MIT",
@@ -16,10 +16,10 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "test": "jest --passWithNoTests",
-    "release": "yarn build && yarn version",
-    "preversion": "yarn test && yarn build",
-    "postversion": "git push --tags && yarn publish . --tag $npm_package_version && git push && echo \"Successfully released version $npm_package_version!\"",
-    "start": "react-scripts start"
+    "release": "npm run build && npm run version",
+    "preversion": "npm run test && npm run build",
+    "postversion": "git push --tags && npm run publish . --tag $npm_package_version && git push && echo \"Successfully released version $npm_package_version!\"",
+    "start": "PORT=3007 react-scripts start"
   },
   "peerDependencies": {
     "react": "^18.1.0",
@@ -47,7 +47,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-is": "^17.0.2",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "rollup": "^2.57.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "styled-components": "^5.3.1",
@@ -55,7 +55,7 @@
     "typescript": "^4.4.3"
   },
   "publishConfig": {
-    "@uc-asa:registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "browserslist": {
     "production": [
