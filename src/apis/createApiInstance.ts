@@ -16,14 +16,15 @@ import Cookies from "js-cookie";
 
 const defaultTimeout = 40000;
 
-// const handleRequest = (config: any) => {
-//   return {
-//     ...config,
-//     headers: {
-//       ...config.headers,
-//     },
-//   };
-// };
+const handleRequest = (config: any) => {
+  return {
+    ...config,
+    headers: {
+      ...config.headers,
+      "x-api-key": "jrQ94mSuqq5IZhfcKOZEgawQdqLeUkGla3DOBglI",
+    },
+  };
+};
 
 /**
  *
@@ -66,7 +67,7 @@ const createApiInstance = (baseURL: string, name = "") => {
     );
   }
 
-  // api.interceptors.request.use(handleRequest);
+  api.interceptors.request.use(handleRequest);
 
   api.interceptors.response.use(
     (response) => {

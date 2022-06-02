@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import WithTheme from "./containers/oneTimePayment/withTheme";
+import WithTheme from "./containers/accountSummaryBox/withTheme";
 
 ReactDOM.render(
   <React.StrictMode>
